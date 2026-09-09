@@ -20,7 +20,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241205.0",
     "typescript": "^5.7.0",
-    "vitest": "^2.0.0",
+    "vitest": "^4.1.11",
     "@types/better-sqlite3": "^7.6.13",
     "better-sqlite3": "^12.9.0"
   },
