@@ -242,10 +242,10 @@ importers:
         version: link:../sdk
       '@modelcontextprotocol/sdk':
         specifier: ^1.12.1
-        version: 1.28.0(zod@3.25.76)
+        version: 1.28.0(zod@4.6.6)
       zod:
-        specifier: ^3.24.4
-        version: 3.25.76
+        specifier: ^4.6.6
+        version: 4.6.6
     devDependencies:
       '@types/node':
         specifier: ^25.5.0
@@ -268,7 +268,7 @@ importers:
         version: 4.20260317.1
       '@modelcontextprotocol/sdk':
         specifier: ^1.12.1
-        version: 1.28.0(zod@3.25.76)
+        version: 1.28.0(zod@4.6.6)
       '@types/node':
         specifier: ^22.0.0
         version: 22.19.15
@@ -282,8 +282,8 @@ importers:
         specifier: ^3.60.0
         version: 3.114.17(@cloudflare/workers-types@4.20260317.1)
       zod:
-        specifier: ^3.24.4
-        version: 3.25.76
+        specifier: ^4.6.6
+        version: 4.6.6
 
   packages/sdk:
     devDependencies:
@@ -1962,6 +1962,7 @@ packages:
 
   '@line/liff@2.28.0':
     resolution: {integrity: sha512-A2BNIZDbDnBRBVTbHv32YB54T4aUDQyNyXv9y6Ut8w4yZLnGVabHtdhK9HSa1FmfmF9pSxhdSnBzULsDXF3vag==}
+    deprecated: This version has been deprecated because an issue with potential security implications was identified. Update to LIFF v2.31.1 immediately. See https://developers.line.biz/en/docs/liff/release-notes/#liff-v2-31-1
 
   '@modelcontextprotocol/sdk@1.28.0':
     resolution: {integrity: sha512-gmloF+i+flI8ouQK7MWW4mOwuMh4RePBuPFAEPC6+pdqyWOUMDOixb6qZ69owLJpz6XmyllCouc4t8YWO+E2Nw==}
@@ -3946,8 +3947,8 @@ packages:
   zod@3.22.3:
     resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
 snapshots:
 
@@ -5339,7 +5340,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@modelcontextprotocol/sdk@1.28.0(zod@3.25.76)':
+  '@modelcontextprotocol/sdk@1.28.0(zod@4.6.6)':
     dependencies:
       '@hono/node-server': 1.19.11(hono@4.12.8)
       ajv: 8.18.0
@@ -5356,8 +5357,8 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.1(zod@3.25.76)
+      zod: 4.6.6
+      zod-to-json-schema: 3.25.1(zod@4.6.6)
     transitivePeerDependencies:
       - supports-color
 
@@ -5696,6 +5697,14 @@ snapshots:
       '@vitest/utils': 2.1.9
       chai: 5.3.3
       tinyrainbow: 1.2.0
+
+  '@vitest/mocker@2.1.9(vite@5.4.21(@types/node@22.19.15)(lightningcss@1.32.0))':
+    dependencies:
+      '@vitest/spy': 2.1.9
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      vite: 5.4.21(@types/node@22.19.15)(lightningcss@1.32.0)
 
   '@vitest/mocker@2.1.9(vite@5.4.21(@types/node@25.5.0)(lightningcss@1.32.0))':
     dependencies:
@@ -7283,7 +7292,7 @@ snapshots:
   vitest@2.1.9(@types/node@22.19.15)(lightningcss@1.32.0):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(vite@5.4.21(@types/node@25.5.0)(lightningcss@1.32.0))
+      '@vitest/mocker': 2.1.9(vite@5.4.21(@types/node@22.19.15)(lightningcss@1.32.0))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -7441,10 +7450,10 @@ snapshots:
       cookie: 1.1.1
       youch-core: 0.3.3
 
-  zod-to-json-schema@3.25.1(zod@3.25.76):
+  zod-to-json-schema@3.25.1(zod@4.6.6):
     dependencies:
-      zod: 3.25.76
+      zod: 4.6.6
 
   zod@3.22.3: {}
 
-  zod@3.25.76: {}
+  zod@4.6.6: {}
